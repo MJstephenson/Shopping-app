@@ -37,8 +37,8 @@
     <title>Shopaholic {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
-      <div class="row">
+    <header class=" fixed-top">
+      <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link main-logo-link">
                   <h2 class="logo-font text-danger my-0">Shopaholic</h2>
@@ -72,11 +72,11 @@
                               {% if request.user.is_superuser %}
                                   <a href="" class="dropdown-item text-danger">Product Management</a>
                               {% endif %}
-                              <a href="" class="dropdown-item">My Profile</a>
-                              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                              <a href="" class="dropdown-item text-danger">My Profile</a>
+                              <a href="{% url 'account_logout' %}" class="dropdown-item text-danger">Logout</a>
                           {% else %}
-                              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                              <a href="{% url 'account_signup' %}" class="dropdown-item text-danger">Register</a>
+                              <a href="{% url 'account_login' %}" class="dropdown-item text-danger">Login</a>
                           {% endif %}
                       </div>
                   </li>
@@ -96,7 +96,27 @@
                   </li>
               </ul>
           </div>
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
       </div>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <button class="navbar-toggler text-danger" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <div></div>
+                </span>
+            </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+        </nav>
+    </div>
+    <div class="row justify-content-center">
+        <div id="delivery-banner" class="text-center w-90 mx-auto text-danger font-weight-bold">
+            <h4 class="logo-font d-sm-none border border-danger rounded-lg bg-orange banner-text">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+            <h4 class="logo-font d-none d-sm-block border border-danger rounded-lg bg-orange font-weight-medium banner-text">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+        </div>
+    </div>
+    
+    
   </header>
 
     {% if messages %}

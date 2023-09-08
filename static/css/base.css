@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Montserrat';
 }
 
 .main-logo-link {
@@ -44,12 +45,69 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #961212;
+    background: #dc3545;
     color: white;
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+/* Creates a hamburger menu ontop of original to my style */
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default background-image */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon > div {
+    content: ''; /* This creates the bars */
+    display: block;
+    width: 22px; /* Width of the bar */
+    height: 2px; /* Height of the bar */
+    background-color: #dc3545; 
+    margin: 4px 0; /* Spacing between the bars */
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.nav-item {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+/* offers banner */
+.w-90 {
+    width: 90%;
+}
+
+.bg-orange {
+    background-color: #dc3545;
+}
+
+.banner-text {
+    font-size: 14px;
+    color: #e6983c;
+    padding: 4px 10px 4px 10px;
+}
+
+/* homepage call to action */
+#home-cta {
+    margin-top: 240px;
+}
+
+#cta-text {
+    font-size: 20px;
+}
+
+.bg-see-through {
+    background-color: rgba(39, 43, 43, 0.5);
 }
 
 /* -------------------------------- Media Queries */
@@ -73,5 +131,35 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .banner-text {
+        font-size: 20px;
+        color: #e6983c;
+        padding: 4px 10px 4px 10px;
+    }
+
+    #home-cta {
+        margin-top: 100px;
+    }
+
+    #cta-text {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    #home-cta {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 574px) {
+    #home-cta {
+        margin-top: 200px;
     }
 }

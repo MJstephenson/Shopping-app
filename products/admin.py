@@ -13,7 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name', 'sku', 'category', 'alcohol_type', 'price', 'rating', 
         'alcohol_content', 'volume', 'country_of_origin', 'year_of_production', 
-        'stock'
+        'stock', 'image',
     )
     ordering = ('name',)
 

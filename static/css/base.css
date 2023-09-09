@@ -10,6 +10,15 @@ body {
     font-family: 'Montserrat';
 }
 
+.text-small {
+    font-size: 0.75rem;
+}
+
+
+#topnav {
+    background-color: black;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -145,7 +154,7 @@ body {
     }
 
     .navbar {
-        background-color: transparent;
+        background-color: black;
     }
 
     .banner-text {

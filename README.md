@@ -717,6 +717,14 @@ by sending yourself the following command: `!freemedia`.
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | homepage | image | background image |
+| [Unsplash](https://unsplash.com/photos/fAz5Cf1ajPM) | products | image | sauvignon white wine |
+| [Unsplash](https://unsplash.com/photos/pXyNqLpNqAU) | products | image | rose wine |
+| [Unsplash](https://unsplash.com/photos/zIo9Fbh8qJc) | products | image | red wine |
+| [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | products | image | Marks rum |
+| [Unsplash](https://unsplash.com/photos/ybxexK6umlM) | products | image | hero bitter |
+| [Unsplash](https://unsplash.com/photos/OzMHgwxTolo) | products | image | koval gin |
+| [Unsplash](https://unsplash.com/photos/296kqnmcgUQ) | products | image | blue crush vodka |
+| [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | homepage | image | background image |
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
 | [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
 | [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |

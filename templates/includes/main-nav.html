@@ -50,10 +50,11 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item text-danger">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item text-danger">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item text-danger">Clearance</a>
-                <a href="{% url 'products' %}?category=nw_arrivals,deals,clearance" class="dropdown-item text-danger">All Specials</a>
+                <a href="{% url 'products' %}?special=new_arrival" class="dropdown-item text-danger">New Arrivals</a>
+                <a href="{% url 'products' %}?special=deal" class="dropdown-item text-danger">Deals</a>
+                <a href="{% url 'products' %}?special=clearance" class="dropdown-item text-danger">Clearance</a>
+                <a href="{% url 'products' %}?special=all_specials" class="dropdown-item text-danger">All Specials</a>
+
             </div>
         </li>
 

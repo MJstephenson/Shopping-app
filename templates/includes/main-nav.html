@@ -17,8 +17,8 @@
                 Beer
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="beer-link">
-                <a href="" class="dropdown-item text-danger">Lager</a>
-                <a href="" class="dropdown-item text-danger">Bitter</a>
+                <a href="{% url 'products' %}?category=lager" class="dropdown-item text-danger">Lager</a>
+                <a href="{% url 'products' %}?category=bitter" class="dropdown-item text-danger">Bitter</a>
             </div>
         </li>
 
@@ -27,9 +27,9 @@
                 Wine
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="wine-link">
-                <a href="" class="dropdown-item text-danger">Red</a>
-                <a href="" class="dropdown-item text-danger">White</a>
-                <a href="" class="dropdown-item text-danger">Rose</a>
+                <a href="{% url 'products' %}?category=red wine" class="dropdown-item text-danger">Red</a>
+                <a href="{% url 'products' %}?category=white wine" class="dropdown-item text-danger">White</a>
+                <a href="{% url 'products' %}?category=rose" class="dropdown-item text-danger">Rose</a>
             </div>
         </li>
 
@@ -38,10 +38,10 @@
                 Spirits
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="spirits-link">
-                <a href="" class="dropdown-item text-danger">Vodka</a>
-                <a href="" class="dropdown-item text-danger">Whiskey</a>
-                <a href="" class="dropdown-item text-danger">Rum</a>
-                <a href="" class="dropdown-item text-danger">Gin</a>
+                <a href="{% url 'products' %}?category=vodka" class="dropdown-item text-danger">Vodka</a>
+                <a href="{% url 'products' %}?category=whiskey" class="dropdown-item text-danger">Whiskey</a>
+                <a href="{% url 'products' %}?category=rum" class="dropdown-item text-danger">Rum</a>
+                <a href="{% url 'products' %}?category=gin" class="dropdown-item text-danger">Gin</a>
             </div>
         </li>
 
@@ -50,10 +50,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item text-danger">New Arrivals</a>
-                <a href="" class="dropdown-item text-danger">Deals</a>
-                <a href="" class="dropdown-item text-danger">Clearance</a>
-                <a href="" class="dropdown-item text-danger">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item text-danger">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item text-danger">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item text-danger">Clearance</a>
+                <a href="{% url 'products' %}?category=nw_arrivals,deals,clearance" class="dropdown-item text-danger">All Specials</a>
             </div>
         </li>
 

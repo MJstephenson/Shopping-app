@@ -27,6 +27,9 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+            if not products:
+                messages.info(request, "No products found matching your search criteria!")
+
     context = {
         'products': products,
         'search_term': query,

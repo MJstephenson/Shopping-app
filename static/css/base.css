@@ -146,6 +146,9 @@ body {
             margin-top: 240px;
         }
 
+.alert {
+    background-color: white;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

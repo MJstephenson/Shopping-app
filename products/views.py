@@ -5,6 +5,41 @@ from .models import Product, Category
 
 # Create your views here.
 
+
+def products(request):
+    """ A view to show special offers """
+    
+    query = request.GET.get('q')
+    category = request.GET.get('category')
+    special = request.GET.get('special')
+
+    # If a search query is present, override all other filters
+    if query:
+        products = Product.objects.filter(
+            Q(name__icontains=query) | 
+            Q(description__icontains=query) |
+            Q(category__name__icontains=query)
+        )
+        if not products.exists():
+            messages.info(request, "No products found for your search.")
+    # Handle specials
+    elif special == 'deal':
+        products = Product.objects.filter(deal=True)
+    elif special == 'new_arrival':
+        products = Product.objects.filter(new_arrival=True)
+    elif special == 'clearance':
+        products = Product.objects.filter(clearance=True)
+    elif special == 'all_specials':
+        products = Product.objects.filter(Q(deal=True) | Q(new_arrival=True) | Q(clearance=True))
+    # Handle other categories
+    elif category:
+        products = Product.objects.filter(category__name__iexact=category)
+    else:
+        products = Product.objects.all()
+
+    return render(request, 'products/products.html', {'products': products})
+
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 

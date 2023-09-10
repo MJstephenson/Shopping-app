@@ -35,8 +35,21 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}" class="overflow-hidden">
-                                    <img class="card-img-top img-fluid d-block fixed-height" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <a href="{% url 'product_detail' product.id %}" class="image-wrapper overflow-hidden">
+                                    {% if product.image %}
+                                        <img class="card-img-top img-fluid d-block fixed-height" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    {% else %}
+                                        <img class="card-img-top img-fluid d-block fixed-height" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    {% endif %}
+                                    {% if product.new_arrival %}
+                                        <span class="offer-label font-weight-bold">New Arrival !</span>
+                                    {% endif %}
+                                    {% if product.deal %}
+                                        <span class="offer-label-d font-weight-bold">What a Deal !</span>
+                                    {% endif %}
+                                    {% if product.clearance %}
+                                        <span class="offer-label-c font-weight-bold">Clearance !</span>
+                                    {% endif %}
                                 </a>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}" class="overflow-hidden">
@@ -63,6 +76,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
+                                            
                                             <p class="lead mb-0 text-left font-weight-bold">Price: £{{ product.price }} <span class="font-weight-light text-small">(per bottle/can)</span></p>
                                             
                                         </div>

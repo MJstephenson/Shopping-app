@@ -149,6 +149,40 @@ body {
 .alert {
     background-color: white;
 }
+
+.image-wrapper {
+    position: relative;
+}
+
+.offer-label {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: orange;
+    padding: 5px;
+    display: block;
+    color: white;
+}
+
+.offer-label-d {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    display: block;
+    color: white;
+}
+
+.offer-label-c {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: rgb(255, 0, 255);
+    padding: 5px;
+    display: block;
+    color: white;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

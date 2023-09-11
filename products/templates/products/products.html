@@ -16,6 +16,7 @@
             <div class="col text-center mt-3">
                 <h2 class="logo-font margin-top">Products</h2>
                 <hr class="w-50 mb-1 hr-danger">
+                
             </div>
         </div>
         {% if messages %}
@@ -28,9 +29,36 @@
         </div>
         {% endif %}
         <div class="row">
+            
             <div class="product-container col-10 offset-1">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-muted mt-3 text-center text-lg-left">
+                        <p class="">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="text-danger"><a href="{% url 'products' %}" class="text-danger">Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 my-auto d-flex justify-content-end">
+                        <div class="sort-select-wrapper w-100  search-dropdown">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Type (A-Z)</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Type (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
+                    
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
@@ -67,9 +95,8 @@
                                             {% endif %}
                                         </div>
                                 <div class="card-body pb-0">
-                                    <p class="mb-0"><strong>Type: </strong>{{ product.category }}</p>
+                                    <p class="mb-0"><strong>Type: </strong>{{ product.category }}</></p>
                                     <p class="mb-0"><strong>Description: </strong>{{ product.description }}</p>
-                                    <p class="mb-0"><strong>Taste Notes: </strong>{{ product.taste_notes }}</p>
                                     <p class="mb-0"><strong>Alcohol Content: </strong>{{ product.alcohol_content }}%</p>
                                     <p class="mb-0"><strong>Volume: </strong>{{ product.volume }} mls</p>
                                 </div>
@@ -109,4 +136,36 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+<script type="text/javascript">
+   // This will attach an event listener to the "sort-selector" dropdown.
+document.getElementById("sort-selector").addEventListener("change", function() {
+    
+    // Then this will retrieve the selected value from the dropdown.
+    const selectedValue = this.value;
+
+    // Creates a new URL object based on the current window location.
+    const currentUrl = new URL(window.location);
+
+    // If the user selects the "sort by..." option from the dropdown menu
+    if (selectedValue === "None_None") {
+        // Remove the "sort" and "direction" query parameters from the URL.
+        currentUrl.searchParams.delete("sort");
+        currentUrl.searchParams.delete("direction");
+    } else {
+        // Splits the selected value into its "sort" and "direction" components.
+        const [sort, direction] = selectedValue.split("_");
+
+        // Updates the URL's query parameters with the new "sort" and "direction" values.
+        currentUrl.searchParams.set("sort", sort);
+        currentUrl.searchParams.set("direction", direction);
+    }
+
+    // Redirects the browser to the modified URL. This causes the page to reload with the new sorting applied.
+    window.location = currentUrl;
+});
+</script>
 {% endblock %}

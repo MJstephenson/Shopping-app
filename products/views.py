@@ -3,13 +3,15 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
+
 def search_products(query):
     """ Utility function to filter products based on a query """
     return Product.objects.filter(
-        Q(name__icontains=query) | 
+        Q(name__icontains=query) |
         Q(description__icontains=query) |
         Q(category__name__icontains=query)
     )
+
 
 def fetch_special_products(special):
     """ Utility function to fetch products based on special offers """
@@ -21,6 +23,7 @@ def fetch_special_products(special):
     }
     return Product.objects.filter(filters.get(special, Q()))
 
+
 def products(request):
     """ A view to show all products, including specials, sorting, and search queries """
 
@@ -29,6 +32,7 @@ def products(request):
     special = request.GET.get('special')
     sort = request.GET.get('sort')
     direction = request.GET.get('direction')
+    current_sorting = f"{sort}_{direction}" if sort and direction else 'None_None'
 
     if query:
         products = search_products(query)
@@ -58,6 +62,7 @@ def products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)

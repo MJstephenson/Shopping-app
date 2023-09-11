@@ -183,6 +183,10 @@ body {
     display: block;
     color: white;
 }
+
+.product-sort-row {
+    width: 90%;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -233,6 +237,10 @@ body {
 @media (min-width: 768px) {
     #home-cta {
         margin-top: 200px;
+    }
+
+    .search-dropdown {
+        width: 25% !important;
     }
 }
 

@@ -202,7 +202,9 @@ body {
     border: 1px solid black;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 

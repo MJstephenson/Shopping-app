@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font margin-top">Products</h2>
+                <h2 class="logo-font margin-top text-white">Products</h2>
                 <hr class="w-50 mb-1 hr-danger">
                 
             </div>
@@ -35,9 +35,9 @@
                     <div class="col-12 col-lg-6 text-muted mt-3 text-center text-lg-left">
                         <p class="">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="text-danger"><a href="{% url 'products' %}" class="text-danger">Products Home</a> | </span>
+                                <span class="text-danger"><a href="{% url 'products' %}" class="text-danger font-weight-bold">Products Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            <span class="text-white">{{ products|length }}</span><span class="text-white"> Products</span>{% if search_term %} <span class="text-white">found for </span><strong class="text-white">"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                     <div class="col-12 col-lg-6 my-auto d-flex justify-content-end">

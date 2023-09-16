@@ -45,19 +45,19 @@
               </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <form method="GET" action="{% url 'products' %}">
-                  <div class="input-group w-100">
-                      <input class="form-control  rounded-2" type="text" name="q" placeholder="Search for drinks">
-                      <div class="input-group-append">
-                          <button class="form-control btn btn-danger rounded-2" type="submit">
-                              <span class="icon">
-                                  <i class="fas fa-search"></i>
-                              </span>
-                          </button>
-                      </div>
-                  </div>
-              </form>
-          </div>
+            <form method="GET" action="{% url 'products' %}" id="searchForm">
+                <div class="input-group w-100">
+                    <input class="form-control rounded-2" type="text" name="q" id="searchInput" placeholder="Search for drinks">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-danger rounded-2" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
@@ -146,6 +146,26 @@
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
+
+    var searchInput = document.getElementById("searchInput");
+    var defaultPlaceholder = searchInput.placeholder;
+
+    document.getElementById("searchForm").addEventListener("submit", function(event) {        
+        if (searchInput.value.trim() === "") {
+            event.preventDefault(); // This will prevent the form submission
+            searchInput.placeholder = "Please enter a search term !";
+            searchInput.classList.add("is-invalid"); // Add red warning circle
+            searchInput.value = ""; // Clears any spaces or other content
+        }
+    });
+
+    // This code restores the original placeholder when the user starts typing
+    searchInput.addEventListener("input", function() {
+        if (searchInput.classList.contains("is-invalid")) {
+            searchInput.placeholder = defaultPlaceholder;
+            searchInput.classList.remove("is-invalid");
+        }
+    });
     </script>
     {% endblock %}
 

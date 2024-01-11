@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-c5zg2bj8inhz&vsts14)caka2e6_%j*(^z$*@!umqx#ccptunn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shopaholic-app.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['shopaholic-app.herokuapp.com', 'localhost', 'shopaholic-app-7001a5641b3f.herokuapp.com']
 
 
 # Application definition

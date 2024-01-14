@@ -11,22 +11,29 @@
 {% endblock %}
 
 {% block content %}
+<h1>Contact Us</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post" class="form-group text-white">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_name" class="form-label" placeholder="Your name"></label>
+                    {{ form.name|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    <label for="id_email" class="form-label"></label>
+                    {{ form.email|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    <label for="id_message" class="form-label"></label>
+                    {{ form.message|as_crispy_field }}
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-<form method="post" class="form-group text-white">
-    {% csrf_token %}
-    <div class="mb-3">
-        <label for="id_name" class="form-label"></label>
-        {{ form.name|as_crispy_field }}
-    </div>
-    <div class="mb-3">
-        <label for="id_email" class="form-label"></label>
-        {{ form.email|as_crispy_field }}
-    </div>
-    <div class="mb-3">
-        <label for="id_message" class="form-label"></label>
-        {{ form.message|as_crispy_field }}
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
                 
 {% endblock %}

@@ -6,7 +6,10 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('thank_you')
     else:
         form = ContactForm()
     return render(request, 'contact/contact.html', {'form': form})
+
+def thank_you_view(request):
+    return render(request, 'contact/thank_you.html')

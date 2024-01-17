@@ -19,11 +19,19 @@
                 {% csrf_token %}
                 <div class="mb-3">
                     <label for="id_name" class="form-label" placeholder="Your name"></label>
-                    {{ form.name|as_crispy_field }}
+                    {{ form.first_name|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    <label for="id_email" class="form-label"></label>
+                    {{ form.surname|as_crispy_field }}
                 </div>
                 <div class="mb-3">
                     <label for="id_email" class="form-label"></label>
                     {{ form.email|as_crispy_field }}
+                </div>
+                <div class="mb-3">
+                    <label for="id_email" class="form-label"></label>
+                    {{ form.subject|as_crispy_field }}
                 </div>
                 <div class="mb-3">
                     <label for="id_message" class="form-label"></label>

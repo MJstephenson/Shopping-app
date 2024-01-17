@@ -3,5 +3,7 @@ from .models import Contact
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'timestamp')
+   class ContactAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'surname', 'subject', 'email', 'timestamp')
+    search_fields = ('first_name', 'surname', 'email', 'subject')
     actions = ['delete_selected']

@@ -1,13 +1,26 @@
 from django.db import models
 
+
+SUBJECT_CHOICES = [
+    ('product_inquiry', 'Product Inquiry'),
+    ('order_status', 'Order Status'),
+    ('return_exchange', 'Return/Exchange'),
+    ('payment_issue', 'Payment Issue'),
+    ('technical_support', 'Technical Support'),
+    ('feedback', 'Feedback/Suggestions'),
+    ('other', 'Other'),
+]
+
 class Contact(models.Model):
-    name = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+    surname = models.CharField(max_length=100)
+    subject = models.CharField(max_length=200, choices=SUBJECT_CHOICES) 
     email = models.EmailField()
     message = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Message from {self.name} - {self.timestamp}"
+        return f"{self.first_name} {self.surname} - {self.subject} - {self.timestamp}"
 
     class Meta:
         ordering = ['-timestamp']

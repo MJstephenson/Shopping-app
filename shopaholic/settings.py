@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'f9guw$!hlmujclg#$*)3f_01*z8x2-v%ej!ky
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu107.gitpod.io' 'shopaholic-app-7001a5641b3f.herokuapp.com']
 
 
 # Application definition

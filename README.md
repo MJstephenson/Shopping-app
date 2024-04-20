@@ -1,6 +1,6 @@
 # SHOPPING APP
 
-This is a shopping app for a selection of alcoholic beverages. It will have a fully functioning checkout system and allow users to log in to their accounts. It utilises django, python, stripe (as the payment system) and amazon web services (AWS) to host media files. The app contains 4 custom models that have been built to facilitate the needs of the application. The superuser can add and remove items and their descriptions, as well as utilise the admin from the front end or the django admin center. Orders can be viewed here with CRUD functionality.
+This is a shopping app for a selection of alcoholic beverages. It will have a fully functioning checkout system and allow users to log in to their accounts. It utilises django, python, stripe (as the payment system) and amazon web services (AWS) to host media files. The app contains 4 custom models that have been built to facilitate the needs of the application. The superuser can add and remove items and their descriptions, as well as utilise the admin from the front end or the django admin center. Orders can be viewed here with CRUD functionality. The user can search and sort products and the admin user can also set special offers on any product they like.
 
 https://ui.dev/amiresponsive?url=https://shopaholic-app-7001a5641b3f.herokuapp.com/
 
@@ -10,77 +10,22 @@ https://ui.dev/amiresponsive?url=https://shopaholic-app-7001a5641b3f.herokuapp.c
 
 ## UX
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The general UX theme was taken from the Code Institutes boutique Ado tutorial as having this to assist me as a base template would allow me to learn how to navigate a django app and its intricacies quicker.
 
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Colour Scheme
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+I wanted the colours to pop and be complient for accessibility. White text on a black background was an obvious choice 
 
-Explain your colours and the colour scheme.
+![screenshot](documentation/readme_images/palette.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site
 
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
 

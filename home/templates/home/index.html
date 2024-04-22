@@ -21,6 +21,14 @@
                     <h4>
                         <a href="{% url 'products' %}" class="shop-now-button btn btn-lg btn-danger rounded-2 text-uppercase py-3">Shop Now</a>
                     </h4>
+                    <h4>
+                        <form action="submit" method="POST" class="text-white">
+                            <p class= "text-white mt-4">Newsletter Signup</p>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required placeholder="Email@example.com" maxlength="40"><br><br>
+                            <input type="submit" value="Submit" class="rounded-2">
+                        </form>
+                    </h4>
                 </div>
             </div>
         </div>

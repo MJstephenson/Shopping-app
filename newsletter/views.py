@@ -9,7 +9,7 @@ def newsletter_signup(request):
             return redirect('newsletter_confirmation')
     else:
         form = SubscriberForm()
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'home/index.html', {'form': form})
 
 def newsletter_confirmation(request):
-    return render(request, 'newsletter_confirmation.html')
+    return render(request, 'newsletter/newsletter_confirmation.html')

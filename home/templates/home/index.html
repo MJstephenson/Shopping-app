@@ -22,8 +22,8 @@
                         <a href="{% url 'products' %}" class="shop-now-button btn btn-lg btn-danger rounded-2 text-uppercase py-3">Shop Now</a>
                     </h4>
                     <h4>
-                        <p>Subscribe To Our Newsletter</p>
-                        <form method="post" action="{% url 'newsletter_signup' %}">
+                        <p class="text-white">Subscribe To Our Newsletter</p>
+                        <form class="text-white" method="post" action="{% url 'newsletter_signup' %}">
                             {% csrf_token %}
                             {{ form.as_p }}
                             <button type="submit">Subscribe Click Here</button>

@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 
 
-ALLOWED_HOSTS = ['shopaholic-app.herokuapp.com', 'localhost', '8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['shopaholic-app-7001a5641b3f.herokuapp.com', 'localhost', '8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu110.gitpod.io']
 
 
 # Application definition

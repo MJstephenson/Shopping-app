@@ -29,235 +29,264 @@ I wanted the colours to pop and be complient for accessibility. White text on a 
 
 ## User Stories
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to be able to add/delete alcoholic drinks to my basket, so that I can checkout with the correct basket.
+- As a new site user, I would like to search all products, a product type or special offers, so that I can narrow down my choices.
+- As a new site user, I would like to be able to sort my results , so that I can sort by A-Z, Z-A, rating, type etc .
+- As a new site user, I would like to see new arrivals, clearence and deals, so that I can make an informed choice on my purchases.
+- As a new site user, I would like to be able to create an account, so that I can login, logout and see my purchases.
+- As a new site user, I would like to be able to pay by credit or debit card in the app, so that I can quickly make a purchase.
+- As a new site user, I would like to be able to see what goes into my basket via a notification so that I can see what I am purchasing.
+- As a new site user, I would like to be able to see a confirmation of what I have purchased once I have checked out so I can see what I have purchased.
+- As a new site user, I would like to be able to contact the company via a contact form should I have any issues, so I can get help if required.
+- As a new site user, I would like to be able to sign up to a email newsletter, so that I can keep up to date with news and offers.
+- As a new site user, I would like to be able to see a rating for each item, so I get to know how good it is.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to see my past purchases, so that I can make the same purchase.
+- As a returning site user, I would like to be able to log in to my account, so that I can make a purchase.
+- As a returning site user, I would like to see what new offers are available, so that I can consider a purchase.
+
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to log in and log out as a superuser, so that I can make admin changes that normal users cannot.
+- As a site administrator, I should be able to use crud functionality on the front and back end, so that I can adjust prices/details etc etc.
+- As a site administrator, I should be able to view all customer orders, so that I can manage order processing and fullfillment.
+- As a site administrator, I should be able to see that payments have been processed with a time and date, so that I can ensure they are delivered.
+- As a site administrator, I should be able to manage user accounts and passwords, so that I can remove/add or change accounts or passwords.
+- As a site administrator, I should be able to see who has filled in a form, so that I can respond accordingly and edit or delete/add customer details.
+- As a site administrator, I should be able to see who has filled in a form, so that I can respond to them accordingly.
+
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Figma](https://figma.com) to design my site wireframes. As the product page template is used for filtering products via their tpe when the main nav menu is clicked, for eample wines, red wine, I have not shown wireframes for the navbar pages as they would be exactly the same as the products page. This is with the exception of the Contact Us page which has a form for the user to fill in.
 
 ### Home Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+![screenshot](documentation/readme_images/wireframes/homepage-wire.png)
 
-### About Page Wireframes
+### Product Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
+![screenshot](documentation/readme_images/wireframes/product-wire.png)
 
 ### Contact Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+![screenshot](documentation/readme_images/wireframes/contact-wire.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Bag Page Wireframes
 
-Repeat for any addition wireframe pages you have.
+![screenshot](documentation/readme_images/wireframes/bag-wire.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Payment Confirmation Page Wireframes
+
+![screenshot](documentation/readme_images/wireframes/payment-wire.png)
+
+### Thank You/Subscription Confirmation Page Wireframes
+
+![screenshot](documentation/readme_images/wireframes/thanks-wire.png)
+
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Subscribe to Email Newsletter**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This feature allows the user to signup to an email newsletter. They get a confirmation email to their email address once subscribed for confirmation of the signup. Admin can see who has subscribed in the admin dashboard.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/readme_images/features/subscribe.png)
+![screenshot](documentation/readme_images/features/subscribe-ok.png)
+![screenshot](documentation/readme_images/features/email-confirmation.png)
+![screenshot](documentation/readme_images/features/stored-subscribers.png)
 
-- **Title for feature #2**
+- **Contact Form**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The contact form allows a user to make an enquiry to Shopaholic. The user lands on a confirmation page when they submit the form and the admin gets the details from the form in the dashboard admin under contact/messages.
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/readme_images/features/contact-form.png)
+![screenshot](documentation/readme_images/features/enquiry-thanks.png)
+![screenshot](documentation/readme_images/features/contact-admin.png)
 
-- **Title for feature #3**
+- **Spend Over £40 Get Free Delivery**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If a user spends over £40 they get free devivery and this is calculated at checkout and the delivery cost removed automatically. When a user places items in their basket that are under £40 then a toast notification appears and shows how much more they need to spend to get the free delivery.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/readme_images/features/free-delevery.png)
+![screenshot](documentation/readme_images/features/toast.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Repeat as necessary for as many features as your site contains.
+- **Sort By Feature**
 
-Hint: the more, the merrier!
+    - The user can sort the products by using the sort dropdown menu by price, type, name and rating and choosing to sort by high or low values. The screenshot shows sorting by Name A-Z.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/readme_images/features/sort.png)
+
+
+- **Edit Delete Add Frontend Feature For Admin**
+
+    - Admin can edit or delete products from the front end when they are logged in by simply looking at a product and clicking either Edit or Delete. Clicking Edit gives admin full CRUD functionality for all of the values associated with a product.
+
+![screenshot](documentation/readme_images/features/edit-delete.png)
+![screenshot](documentation/readme_images/features/edit-product.png)
+![screenshot](documentation/readme_images/features/edit-product-1.png)
+!
+
+- **Toasts For Notifications**
+
+    - There are various toasts for the user which are displayed when the user undertakes a specific action which triggers an event listener and the toast appears on the screen.
+
+![screenshot](documentation/readme_images/features/toast-success.png)
+![screenshot](documentation/readme_images/features/toast-no.png)
+
+
+- **Search Functionality**
+
+    - The user can use the search input to search for any product that they may be looking for. If a user enters characters that dont match a product then they are greeted with a toast and a page that says no products match  your search as seen in the toasts images above.
+
+![screenshot](documentation/readme_images/features/search.png)
+
+
+- **Edit Delete Add Frontend Feature For Admin**
+
+    - Admin can edit or delete products from the front end when they are logged in by simply looking at a product and clicking either Edit or Delete. Clicking Edit gives admin full CRUD functionality for all of the values associated with a product.
+
+![screenshot](documentation/readme_images/features/edit-delete.png)
+![screenshot](documentation/readme_images/features/edit-product.png)
+![screenshot](documentation/readme_images/features/edit-product-1.png)
+
+
+- **Automated Confirmation of User Order**
+
+    - The User is redirected to a confirmation page after placing an order on the frontend. Admin also sees this order in the backend.
+
+![screenshot](documentation/readme_images/features/confirmation-order.png)
+![screenshot](documentation/readme_images/features/django-orders.png)
+![screenshot](documentation/readme_images/features/django-order.png)
+
+
+- **Admin Can Add Deal, New Product and Clearence To Any Product**
+
+    - The admin has the ability to add tag to any product which is displayed on the front end to show the user that a product is in a deal, clearence or a new product. These products with these tags added are now searchable in the top menu under special offers where they can be searched for by type. These can be turned on and off in the Admin dashboard by selecting a product or a group of products.
+
+![screenshot](documentation/readme_images/features/special-offers.png)
+![screenshot](documentation/readme_images/features/deal-bool.png)
+![screenshot](documentation/readme_images/features/deal-click.png)
+
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Giving the user the option to rate products
+    - Allow users to leave reviews and ratings for products they have purchased, enhancing the shopping experience for others.
+- Personalized Recommendations
+    - Implement a system that suggests products based on the user’s browsing history and previous purchases.
+- Subscription Services
+    - Offer a subscription model where users can receive their favorite beverages regularly without needing to reorder.
+- Gift Cards and Vouchers
+    - Introduce gift card purchasing options for users who want to gift store credit to others.
+- Interactive Chatbot
+    - Deploy a chatbot to help customers with FAQs, track orders, and provide recommendations.
+- Mobile App
+    - Develop a mobile application to enhance accessibility and provide push notifications for deals and order updates.
+- Loyalty Program
+    - Create a loyalty program offering points or discounts to frequent shoppers, encouraging repeat business.
+- Social Media Integration
+    - Allow users to connect their social media accounts for easy sharing of products and promotions.
+- Augmented Reality 
+    - Implement AR to let users visualize how certain products, like wine or spirit bottles, would look in their home.
+- Multi-Currency Support
+    - Add functionality to show prices and process transactions in different currencies based on the user’s location.
+- A Footer & Address Information
+    - A footer would be nice which could contain the details of the company such as address, social icons etc etc
 
 ## Tools & Technologies Used
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [Mermaidchart] (https://mermaidchart.com) used making the ERD diagram
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The ERD diagram shows all of the relationships of the tables to include primary and foreign keys for the entire database. It shows the one to many and one to one relationships. Cardinality is also shown for the relationships that are optional. 
 
-Using your defined models (one example below), create an ERD with the relationships identified.
+TO NOTE: As the ERD was made prior to developing there are minor changes when comparing the choice of entity names and type, but these can be seen in the example python code and table and are the entities actually used in the application.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/readme_images/erd/erd.png)
+
+### PRODUCT MODEL USED AS AN EXAMPLE ###
 
 ```python
 class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    alcohol_type = models.ForeignKey('AlcoholType', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    description = models.TextField(max_length=200)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
+    new_arrival = models.BooleanField(default=False, help_text="Check this if the product is a new arrival.")
+    deal = models.BooleanField(default=False, help_text="Check this if the product is on deal.")
+    clearance = models.BooleanField(default=False, help_text="Check this if the product is on clearance.")
+    rating = models.DecimalField(max_digits=6, decimal_places=1, null=True, blank=True)
+    alcohol_content = models.DecimalField(max_digits=4, decimal_places=1, help_text="Alcohol content in percentage")
+    volume = models.DecimalField(max_digits=5, decimal_places=0, help_text="Volume in ml")
+    country_of_origin = models.CharField(max_length=100)
+    year_of_production = models.PositiveIntegerField(null=True, blank=True)
+    taste_notes = models.TextField(max_length=200, null=True, blank=True)
+    stock = models.PositiveIntegerField(default=0)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+
 
     def __str__(self):
         return self.name
 ```
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+- Table: **Product As An Example**
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    | **PK** | **ID** (unique) | **Type** | **Notes** |
+    |--------|-----------------|----------|-----------|
+    |        | category        | ForeignKey | models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, blank=True) |
+    |        | alcohol_type    | ForeignKey | models.ForeignKey('AlcoholType', on_delete=models.SET_NULL, null=True, blank=True) |
+    |        | sku             | CharField | max_length=254, null=True, blank=True |
+    |        | name            | CharField | max_length=254 |
+    |        | description     | TextField | max_length=200 |
+    |        | price           | DecimalField | max_digits=6, decimal_places=2 |
+    |        | new_arrival     | BooleanField | default=False, help_text="Check this if the product is a new arrival." |
+    |        | deal            | BooleanField | default=False, help_text="Check this if the product is on deal." |
+    |        | clearance       | BooleanField | default=False, help_text="Check this if the product is on clearance." |
+    |        | rating          | DecimalField | max_digits=6, decimal_places=1, null=True, blank=True |
+    |        | alcohol_content | DecimalField | max_digits=4, decimal_places=1, help_text="Alcohol content in percentage" |
+    |        | volume          | DecimalField | max_digits=5, decimal_places=0, help_text="Volume in ml" |
+    |        | country_of_origin | CharField | max_length=100 |
+    |        | year_of_production | PositiveIntegerField | null=True, blank=True |
+    |        | taste_notes     | TextField | max_length=200, null=True, blank=True |
+    |        | stock           | PositiveIntegerField | default=0 |
+    |        | image_url       | URLField | max_length=1024, null=True, blank=True |
+    |        | image           | ImageField | null=True, blank=True |
 
-![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
 
 ## Testing
 
@@ -265,16 +294,8 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The live deployed application can be found deployed on [Heroku](https://shopaholic-33f79d336a28.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://shopaholic-app-7001a5641b3f.herokuapp.com/).
 
 ### ElephantSQL Database
 
@@ -533,7 +554,7 @@ os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
 os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
 
-# local environment only (do not include these in production/deployment!)
+## local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
 ```
 
@@ -581,67 +602,24 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- The local version of the app works exactly the same as the production version except for a few instances:
+  - The database is different so the same products will not appear in each instance
+  - The emails will not physically be sent in the local environment, but therminal can be viewed to check whether an email has been sent as the email text should appear when a user subscribes to the newsletter.
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Content
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+I based this application on the Code Institutes tutorial for Boutique Ado and made it my own by adding custom models, images, colours and extra pages. So credit needs to go to the creators of the tutorial including [Chris Z](https://github.com/ckz8780). The repository for the code can be found here [Boutique_ado_v1](https://github.com/ckz8780/boutique_ado_v1)
 
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | homepage | image | background image |
+| [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | homepage | image | hero background image |
 | [Unsplash](https://unsplash.com/photos/fAz5Cf1ajPM) | products | image | sauvignon white wine |
 | [Unsplash](https://unsplash.com/photos/pXyNqLpNqAU) | products | image | rose wine |
 | [Unsplash](https://unsplash.com/photos/zIo9Fbh8qJc) | products | image | red wine |
@@ -649,27 +627,13 @@ by sending yourself the following command: `!freemedia`.
 | [Unsplash](https://unsplash.com/photos/ybxexK6umlM) | products | image | hero bitter |
 | [Unsplash](https://unsplash.com/photos/OzMHgwxTolo) | products | image | koval gin |
 | [Unsplash](https://unsplash.com/photos/296kqnmcgUQ) | products | image | blue crush vodka |
-| [Unsplash](https://unsplash.com/photos/V1zGiNVPumM) | homepage | image | background image |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the latter end of development of this project to get it past the post.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- I would like to thank my wife for looking after our baby and boy evenings and weekends to give me time to put this project together. Especially for supporting me with the pain and fatigue caused by Crohn's Disease which has made planning and producing this project so difficult. 
 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- Definately my two boys that dont understand that dad cant play or go out with them as he needs to finish this. Time that I will never get back which sucks. Thanks for sucking it up.

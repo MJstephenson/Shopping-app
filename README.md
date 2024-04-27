@@ -178,6 +178,11 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 ![screenshot](documentation/readme_images/features/deal-click.png)
 
 
+ **Log in / Log out freatures**
+
+    - Both the superuser and the user can log in and log out and under no circumstances can anyone except for the superuser in the backend access anyone elses account or see anyone elses data.
+
+
 ### Future Features
 
 

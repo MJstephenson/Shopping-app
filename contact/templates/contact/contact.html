@@ -18,7 +18,7 @@
             <form method="post" class="form-group text-white">
                 {% csrf_token %}
                 <div class="mb-3">
-                    <label for="id_name" class="form-label" placeholder="Your name"></label>
+                    <label for="id_name" class="form-label"></label>
                     {{ form.first_name|as_crispy_field }}
                 </div>
                 <div class="mb-3">

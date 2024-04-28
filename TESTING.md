@@ -304,14 +304,9 @@ from the respective feature.
 
      ![screenshot](documentation/bugs/bug-toast-subscribe.png)
     
-    
-    
-
-
-
 - When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
 
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
+    ![screenshot](documentation/validation/html/add-product-html.png)
 
     - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
 

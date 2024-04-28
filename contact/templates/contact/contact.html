@@ -18,23 +18,23 @@
             <form method="post" class="form-group text-white">
                 {% csrf_token %}
                 <div class="mb-3">
-                    <label for="id_name" class="form-label"></label>
+                    <label for="id_first_name" class="form-label">First Name</label>
                     {{ form.first_name|as_crispy_field }}
                 </div>
                 <div class="mb-3">
-                    <label for="id_email" class="form-label"></label>
+                    <label for="id_surname" class="form-label">Surname</label>
                     {{ form.surname|as_crispy_field }}
                 </div>
                 <div class="mb-3">
-                    <label for="id_email" class="form-label"></label>
+                    <label for="id_email" class="form-label">Email</label>
                     {{ form.email|as_crispy_field }}
                 </div>
                 <div class="mb-3">
-                    <label for="id_email" class="form-label"></label>
+                    <label for="id_subject" class="form-label">Subject</label>
                     {{ form.subject|as_crispy_field }}
                 </div>
                 <div class="mb-3">
-                    <label for="id_message" class="form-label"></label>
+                    <label for="id_message" class="form-label">Message</label>
                     {{ form.message|as_crispy_field }}
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>

@@ -71,7 +71,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | contact.html | ![screenshot](documentation/validation/html/contact-html.png) | pass |
 | contact | thank_you.html | ![screenshot](documentation/validation/html/thank-you-html.png) | pass |
 | home | index.html | ![screenshot](documentation/validation/html/html-home.png) | pass |
-| newsletter | newsletter_confirmation.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| newsletter | newsletter_confirmation.html | ![screenshot](documentation/validation/html/newsletter-confirmation-html.png) | See Bugs for this issue |
 | products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | products | product_detail.html | ![screenshot](documentation/validation/html/html-product-details.png) | pass |
@@ -616,15 +616,20 @@ Some examples:
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+- When validating the html for the newsletter confirmation I get the error of Error: Element style not allowed as child of element body in this context.. To attempt to fix it I remove the styles from the html just like I did with the same error for the thank you page. I add the styles to main.css and the thank you page finds the css classes and implements them, centering the text in the screen, but the confirmation page doesn't and the styles are not applied. I have put the styles back inline in the html file until I can look into what is causing this issue. 
 
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
+    ![screenshot](documentation/bugs/html-bug.png)
+    ![screenshot](documentation/bugs/confirmation-html.png)
+    ![screenshot](documentation/bugs/confirmation-bug.png)
+    ![screenshot](documentation/bugs/subscribe-fine.png)
 
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
+    - Attempted fix: I have tried reseting the server and tracing the issue back with the inspect tools. This will require further investigation to get this validation fixed.
 
 - For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
 
-    ![screenshot](documentation/bugs/unfixed-bug02.png)
+    
+    
+    
 
     - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
 

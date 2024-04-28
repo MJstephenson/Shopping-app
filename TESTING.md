@@ -84,9 +84,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | profile.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| static | base.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.css | ![screenshot](documentation/validation/css/checkout-css.png) | pass |
+| profiles | profile.css | ![screenshot](documentation/validation/css/profile-css.png) | pass minor warnings|
+| static | base.css | ![screenshot](documentation/validation/css/base-css.png) | pass minor warnings |
 
 ### JavaScript
 

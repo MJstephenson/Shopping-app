@@ -68,8 +68,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | bag | bag.html | ![screenshot](documentation/validation/html/html-products-bag.png) | pass |
 | checkout | checkout.html | ![screenshot](documentation/validation/html/html-checkout.png) | pass |
 | checkout | checkout_success.html | ![screenshot](documentation/validation/html/checkout-success.png) | pass |
-| contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| contact | thank_you.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| contact | contact.html | ![screenshot](documentation/validation/html/contact-html.png) | pass |
+| contact | thank_you.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | home | index.html | ![screenshot](documentation/validation/html/html-home.png) | |
 | newsletter | newsletter_confirmation.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |

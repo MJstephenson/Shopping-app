@@ -76,7 +76,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | products | product_detail.html | ![screenshot](documentation/validation/html/html-product-details.png) | pass |
 | products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
-| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| profiles | profile.html | ![screenshot](documentation/validation/html/profile.html.png) | pass the warning can be ignored as I require a section and no H tags for this page|
 
 ### CSS
 

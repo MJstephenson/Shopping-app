@@ -66,8 +66,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
 | bag | bag.html | ![screenshot](documentation/validation/html/html-products-bag.png) | pass |
-| checkout | checkout.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| checkout | checkout_success.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | checkout.html | ![screenshot](documentation/validation/html/html-checkout.png) | pass |
+| checkout | checkout_success.html | ![screenshot](documentation/validation/html/checkout-success.png) | pass |
 | contact | contact.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | contact | thank_you.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
 | home | index.html | ![screenshot](documentation/validation/html/html-home.png) | |

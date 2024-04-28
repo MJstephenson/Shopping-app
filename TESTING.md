@@ -69,14 +69,14 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | checkout | checkout.html | ![screenshot](documentation/validation/html/html-checkout.png) | pass |
 | checkout | checkout_success.html | ![screenshot](documentation/validation/html/checkout-success.png) | pass |
 | contact | contact.html | ![screenshot](documentation/validation/html/contact-html.png) | pass |
-| contact | thank_you.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
-| home | index.html | ![screenshot](documentation/validation/html/html-home.png) | |
+| contact | thank_you.html | ![screenshot](documentation/validation/html/thank-you-html.png) | pass |
+| home | index.html | ![screenshot](documentation/validation/html/html-home.png) | pass |
 | newsletter | newsletter_confirmation.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
-| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 | products | product_detail.html | ![screenshot](documentation/validation/html/html-product-details.png) | pass |
-| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| profiles | profile.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
 
 ### CSS
 

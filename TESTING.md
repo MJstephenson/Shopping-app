@@ -194,14 +194,18 @@ Sample Lighthouse testing documentation:
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues on the major pages in the app that would be in the main user journey. some of the poor lighthouse scores are produced by a poor server load time, depreciated API's, 3rd party cookies etc which I would look to delve into if I had more time on the project.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse/light-home-mob.png) | ![screenshot](documentation/lighthouse/light-home-desk.png) | Some warnings about minifying css and javascript witha cache policy required |
+| Products | ![screenshot](documentation/lighthouse/light-product-mob.png) | ![screenshot](documentation/lighthouse/light-product-desk.png) | Some minor warnings |
+| Contact | ![screenshot](documentation/lighthouse/light-contact-mob.png) | ![screenshot](documentation/lighthouse/light-contact-desk.png) | Some minor warnings |
+| Bag | ![screenshot](documentation/lighthouse/light-bag-mob.png) | ![screenshot](documentation/lighthouse/light-bag-desk.png) | Some minor warnings |
+| Checkout | ![screenshot](documentation/lighthouse/checkout-success-light-mob.png) | ![screenshot](documentation/lighthouse/checkout-success-light-mob.png) | Some minor warnings |
+
+
+
 
 ## Defensive Programming
 

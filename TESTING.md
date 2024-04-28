@@ -94,8 +94,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | stripe_elements.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| profiles | countryfield.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| checkout | stripe_elements.js | ![screenshot](documentation/validation/js/jshint-stripe-elements.png) | pass |
+| profiles | countryfield.js | ![screenshot](documentation/validation/js/jshint-countryfield.png) | pass |
 
 ### Python
 

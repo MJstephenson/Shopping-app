@@ -72,10 +72,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | thank_you.html | ![screenshot](documentation/validation/html/thank-you-html.png) | pass |
 | home | index.html | ![screenshot](documentation/validation/html/html-home.png) | pass |
 | newsletter | newsletter_confirmation.html | ![screenshot](documentation/validation/html/newsletter-confirmation-html.png) | See Bugs for this issue |
-| products | add_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
-| products | edit_product.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| products | edit_product.html | ![screenshot](documentation/validation/html/add-product-html.png) | pass the warning can be ignored as I require a section and no H tags for this page|
 | products | product_detail.html | ![screenshot](documentation/validation/html/html-product-details.png) | pass |
-| products | products.html | ![screenshot](documentation/validation/path-to-screenshot.png) | pass |
+| products | products.html | ![screenshot](documentation/validation/html/products-html.png) | pass |
 | profiles | profile.html | ![screenshot](documentation/validation/html/profile.html.png) | pass the warning can be ignored as I require a section and no H tags for this page|
 
 ### CSS

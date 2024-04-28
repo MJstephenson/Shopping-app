@@ -14,8 +14,8 @@ class AlcoholTypeAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'name', 'sku', 'category', 'alcohol_type', 'price', 'rating', 
-        'alcohol_content', 'volume', 'country_of_origin', 'year_of_production', 
+        'name', 'sku', 'category', 'alcohol_type', 'price', 'rating',
+        'alcohol_content', 'volume', 'country_of_origin', 'year_of_production',
         'stock', 'image', 'new_arrival', 'deal', 'clearance'
     )
 

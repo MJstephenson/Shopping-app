@@ -31,9 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEBUG' in os.environ
 
 
-
-
-ALLOWED_HOSTS = ['shopaholic-app-7001a5641b3f.herokuapp.com', 'localhost', '8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = [
+    'shopaholic-app-7001a5641b3f.herokuapp.com',
+    'localhost', '8000-mjstephenso-shoppingapp-qorv8husujr.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -56,8 +56,6 @@ INSTALLED_APPS = [
     'profiles',
     'contact',
     'newsletter',
-
-    #other
     'crispy_forms',
     'storages',
 ]
@@ -87,7 +85,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -142,24 +140,27 @@ else:
     }
 
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
+        {
+         'NAME': 'django.contrib.auth.password_validation.'
+                 'UserAttributeSimilarityValidator',
+        },
+        {
+         'NAME': 'django.contrib.auth.password_validation.'
+                 'MinimumLengthValidator',
+        },
+        {
+         'NAME': 'django.contrib.auth.password_validation.'
+                 'CommonPasswordValidator',
+        },
+        {
+         'NAME': 'django.contrib.auth.password_validation.'
+                 'NumericPasswordValidator',
+        },
+    ]
 
 
 # Internationalization
@@ -184,7 +185,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 
 
 if 'USE_AWS' in os.environ:

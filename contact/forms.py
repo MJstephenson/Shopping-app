@@ -4,6 +4,7 @@ from .models import SUBJECT_CHOICES
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 
+
 class ContactForm(forms.ModelForm):
     SUBJECT_CHOICES = [
         ('product_inquiry', 'Product Inquiry'),
@@ -15,7 +16,9 @@ class ContactForm(forms.ModelForm):
         ('other', 'Other'),
     ]
 
+
 subject = forms.ChoiceField(choices=SUBJECT_CHOICES)
+
 
 class ContactForm(forms.ModelForm):
     class Meta:

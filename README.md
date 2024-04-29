@@ -180,9 +180,9 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 ![screenshot](documentation/readme_images/features/deal-click.png)
 
 
- **Log in / Log out freatures**
+ **Log in / Log out features**
 
-    - Both the superuser and the user can log in and log out and under no circumstances can anyone except for the superuser in the backend access anyone elses account or see anyone elses data.
+- Both the superuser and the user can log in and log out and under no circumstances can anyone except for the superuser in the backend access anyone elses account or see anyone elses data.
 
 
 ### Future Features
@@ -214,14 +214,14 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 	- Have the app save a customers product sales history on their account
 - Email Confirmation For Purchase
 	- Have the app send an email to the customer on completion of an order
+- Stock Updates
+	- Ammend stock as product is sold
 
 ## Tools & Technologies Used
 
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -230,7 +230,6 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.

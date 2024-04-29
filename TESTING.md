@@ -140,106 +140,61 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| | Subscribe feature redirects user to confirmation page and sends email to user| Tested the feature by doing inputting my email | The feature behaved as expected, and it sent me the email. The same email cannot be inputted again and a message is shown to the user to inform them of this | Test concluded and passed | ![screenshot](documentation/readme_images/features/email-confirmation.png) |
+| Contact Us | | | | | |
+| | Feature is expected to send the form details to the backend when the user fills the form and clicks/presses the submit button. The user is then redirected to a thank you page | Tested the feature by doing filling in the form. Form cannot be sent if fields not filed in and inputs must conform to max lengths | The feature behaved as expected, and it did sent the message to the backend | Test concluded and passed | ![screenshot](documentation/testing_images/back-form.png) |
+| Search | | | | | |
+| |Search feature is expected to searchthe products and redirect to products with matching text | Tested the feature by using the search bar for red wine | The feature behaved as expected, and it did show red wine products. If there is no match then the user is redirected to a no search results page | Test concluded and passed | ![screenshot](documentation/testing_images/red-wine-search.png) |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
 | Home | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
+| | Click on All Products link in navbar | Redirection to products page | Pass | |
+| | Click on Price link in navbar | Redirection to products page sorted low to high | Pass | |
+| | Click on Rating link in navbar | Redirection to products page sorted high to low | Pass | |
+| | Click on Type link in navbar | Redirection to products page sorted to product types | Pass | |
+| | Click on All products link in navbar | Redirection to products page all products show | Pass | |
+| | Click on lager in navbar | Lager products show | Pass | |
+| | Click on bitter in navbar | Bitter products show | Pass | |
+| | Click on red link in navbar | red wine products show | Pass | |
+| | Click on white link in navbar | white wines show | Pass | |
+| | Click on vodka link in navbar | rose wines show | Pass | |
+| | Click on whiskey link in navbar | whiskey products show | Pass | |
+| | Click on rum link in navbar | rum products show | Pass | |
+| | Click on gin link in navbar | gin products show | Pass | |
+| | Click on new arrivals link in navbar | new arrivals show | Pass | |
+| | Click on deals link in navbar | deas show | Pass | |
+| | Click on clearance link in navbar | clearence products show | Pass | |
+| | Click on all specials link in navbar | all products show | Fail | |
+| | Click on Home contact us | Redirection to contact page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| Products | | | | |
+| | sort dropdown | sorts all products depending on selection | Pass | |
+| | superuser CRUD functionality edit/delete | works as expected deletes or redirects to edit page | Pass | |
+| | superuser CRUD functionality edit/delete shows toast | works as expected  | Pass | |
+| | number of items displayed | works as expected  | Pass | |
+| | superuser can edit all details and image for a product then clicks update | updates and image is changed | Pass | |
+| Product Details | | | | |
+| | Ratings | Ratings show | Pass | |
+| | product details | All details show | Pass | |
+| | price | price shows | Pass | |
+| | add more products and add to bag| products are added | Pass | |
+| | sucess toast shows on add to bag click | free delivery shows/hides based on £ in bag | Pass | |
+| | toast link on click | Redirection to checkout | Pass | |
+| Register | | | | |
+| | Click on sign up button after correctly filling in fields | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password (twice) | Field will only accept password format | Pass | |
 | | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
 | | Confirm email | Redirects user to blank Sign In page | Pass | |
+| | register toast | toast appears as expected | Pass | |
 | Log In | | | | |
 | | Click on the Login link | Redirection to Login page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -247,13 +202,34 @@ When in doubt, use the above method instead, and delete the table below.
 | | Click Login button | Redirects user to home page | Pass | |
 | Log Out | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
+| | Click Confirm Logout button | Redirects user to home page and shows logout toast | Pass | |
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| | Click on the Edit button | User can edit their details | Pass | |
+| | Previous orders should show | past orders should show | Fail | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
+| Shopping Bag | | | | |
+| | Bag products | all products selected show in bag | Pass | |
+| | Add quantity | works as expected | Pass | |
+| | Remove products | works as expected | Pass | |
+| | Keep Shopping button on click | works as expected redirects to all products | Pass | |
+| Checkout | | | | |
+| | Fill in form and stripe payment | proceeds to confirmation page | Pass | |
+| | Enter invalid data | tooltips are shown | Pass | |
+| | Save details tickbox | does not save data | Fail | |
+| Confirmation page | | | | |
+| | Invoice shows all details/data from purchase | Pass | |
+| | Toast for confirmation shows| works as expected | Pass | |
+| Shopping Bag Icon Price | | | | |
+| | Basket totals icon | basket icon updates price accordingly | Pass | |
+| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
+| Superuser | | | | |
+|| superuser clicks link to product management | redirects to add product page | Pass | |
+|| superuser fills out product form and adds image | product is added | Pass | |
+|| superuser attempts to incorrectly fill out form | all tooltips display as appropriate & page wont proceed | Pass | |
+| Special Offers | | | | |
+|| superuser clicks tickbox to make a product clearence/deal/new.  | Text appears on image as expected and product appears when special offers type is selected in navbar. | Pass | |
+|| superuser clicks 2-3 tickboxes | 3 special offer text boxes appear on images | Fail | |
 
 
 ## User Story Testing
@@ -311,4 +287,6 @@ When in doubt, use the above method instead, and delete the table below.
     ![screenshot](documentation/bugs/bug-offers.png)
 
     - Attempted fix: I have looked through changes in github but I cannot currently identify what code has been changed to address this issue and put it back to how it was previous to the validation. This will require extra time on the project to rescue this feature.
+
+
 

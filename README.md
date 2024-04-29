@@ -53,12 +53,14 @@ I wanted the colours to pop and be complient for accessibility. White text on a 
 ### Site Admin
 
 - As a site administrator, I should be able to log in and log out as a superuser, so that I can make admin changes that normal users cannot.
-- As a site administrator, I should be able to use crud functionality on the front and back end, so that I can adjust prices/details etc etc.
+- As a site administrator, I should be able to edit/delete products on the front end, so that I can adjust prices/details etc etc.
 - As a site administrator, I should be able to view all customer orders, so that I can manage order processing and fullfillment.
 - As a site administrator, I should be able to see that payments have been processed with a time and date, so that I can ensure they are delivered.
 - As a site administrator, I should be able to manage user accounts and passwords, so that I can remove/add or change accounts or passwords.
 - As a site administrator, I should be able to see who has filled in a form, so that I can respond accordingly and edit or delete/add customer details.
 - As a site administrator, I should be able to see who has filled in a form, so that I can respond to them accordingly.
+- As a site administrator I should be able tosee who has filled in a subscribe email and edit/delete them
+
 
 
 ## Wireframes
@@ -208,6 +210,10 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
     - Add functionality to show prices and process transactions in different currencies based on the user’s location.
 - A Footer & Address Information
     - A footer would be nice which could contain the details of the company such as address, social icons etc etc
+- Sales History
+	- Have the app save a customers product sales history on their account
+- Email Confirmation For Purchase
+	- Have the app send an email to the customer on completion of an order
 
 ## Tools & Technologies Used
 

@@ -255,37 +255,33 @@ When in doubt, use the above method instead, and delete the table below.
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 | repeat for all remaining pages | x | x | x | x |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like to be able to add/delete alcoholic drinks to my basket, so that I can checkout with the correct basket | ![screenshot](documentation/user-stories/add-delete.png) |
+| As a new site user, I would like to search all products, a product type or special offers, so that I can narrow down my choices | ![screenshot](documentation/user-stories/searchproducts.png) |
+| As a new site user, I would like to be able to sort my results , so that I can sort by A-Z, Z-A, rating, type etc | ![screenshot](documentation/user-stories/sort-user.png) |
+| As a new site user, I would like to see new arrivals, clearence and deals, so that I can make an informed choice on my purchases | ![screenshot](documentation/user-stories/offers.png) |
+| As a new site user, I would like to be able to create an account, so that I can login, logout and see my purchases | ![screenshot](documentation/user-stories/register-user.png) |
+| As a new site user, I would like to be able to pay by credit or debit card in the app, so that I can quickly make a purchase | ![screenshot](documentation/user-stories/credit-card.png) |
+| As a new site user, I would like to be able to see what goes into my basket via a notification so that I can see what I am purchasing | ![screenshot](documentation/user-stories/add-toast.png) |
+| As a new site user, I would like to be able to see a confirmation of what I have purchased once I have checked out so I can see what I have purchased | ![screenshot](documentation/user-stories/check-conf.png) |
+| As a new site user, I would like to be able to contact the company via a contact form should I have any issues, so I can get help if required | ![screenshot](documentation/user-stories/contact-form-user.png) |
+| As a new site user, I would like to be able to sign up to a email newsletter, so that I can keep up to date with news and offers | ![screenshot](documentation/user-stories/sign-up.png) |
+| As a new site user, I would like to be able to see a rating for each item, so I get to know how good it is | ![screenshot](documentation/user-stories/rating.png) |
+| As a returning site user, I would like to see my past purchases, so that I can make the same purchase | ![screenshot](documentation/user-stories/past.png) |
+| As a returning site user, I would like to be able to log in to my account, so that I can make a purchase | ![screenshot](documentation/user-stories/register-user.png) |
+| As a returning site user, I would like to see what new offers are available, so that I can consider a purchase | ![screenshot](documentation/user-stories/clearance.png) |
+| As a site administrator, I should be able to log in and log out as a superuser, so that I can make admin changes that normal users cannot on the frontend| ![screenshot](documentation/user-stories/prod-management.png) |
+| As a site administrator, I should be able to edit/delete products with CRUD functionality on the front end, so that I can adjust prices/details etc etc | ![screenshot](documentation/user-stories/edit-delete-front.png) |
+| As a site administrator, I should be able to view all customer orders, so that I can manage order processing and fullfillment | ![screenshot](documentation/user-stories/orders.png) |
+| As a site administrator, I should be able to see that payments have been processed with a time and date, so that I can ensure they are delivered ![screenshot](documentation/user-stories/paid-back.png) |
+|As a site administrator, I should be able to manage user accounts and passwords, so that I can remove/add or change accounts or passwords ![screenshot](documentation/user-stories/accounts.png) |
+|  As a site administrator, I should be able to see who has filled in a form, so that I can respond accordingly and edit or delete/add customer details | ![screenshot](documentation/user-stories/contact-form-back.png) |
+| As a site administrator, I should be able to see who has filled in a form, so that I can respond to them accordingly | ![screenshot](documentation/user-stories/contact-form-back.png) |
 
 
 ## Unfixed Bugs
@@ -310,11 +306,9 @@ from the respective feature.
 
     - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+- When validating code for html an unknown change in the code that I have made means that the special offers nav link broke and it now shows all the products, rather than all the special offeres.
 
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
+    ![screenshot](documentation/bugs/bug-offers.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+    - Attempted fix: I have looked through changes in github but I cannot currently identify what code has been changed to address this issue and put it back to how it was previous to the validation. This will require extra time on the project to rescue this feature.
 
-> [!NOTE]  
-> There are no remaining bugs that I am aware of.

@@ -232,7 +232,7 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
-- [Mermaidchart] (https://mermaidchart.com) used making the ERD diagram
+- [Mermaidchart](https://mermaidchart.com) used making the ERD diagram.
 
 ## Database Design
 

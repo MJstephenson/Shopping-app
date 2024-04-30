@@ -139,12 +139,6 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Desktop | ![screenshot](documentation/responsiveness/desktop-checkout.png) |  |  | Works as expected |
 
 
-
-
-
-
-
-
 ## Lighthouse Audit
 
 

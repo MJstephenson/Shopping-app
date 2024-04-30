@@ -275,6 +275,11 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a site administrator, I should be able to see who has filled in a form, so that I can respond to them accordingly | ![screenshot](documentation/user-stories/contact-form-back.png) |
 
 
+## 404 Page
+
+The website has a error page.
+![screenshot](documentation/404/404.png) 
+
 ## Unfixed Bugs
 
 

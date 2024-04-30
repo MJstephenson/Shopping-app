@@ -269,9 +269,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a site administrator, I should be able to log in and log out as a superuser, so that I can make admin changes that normal users cannot on the frontend| ![screenshot](documentation/user-stories/prod-management.png) |
 | As a site administrator, I should be able to edit/delete products with CRUD functionality on the front end, so that I can adjust prices/details etc etc | ![screenshot](documentation/user-stories/edit-delete-front.png) |
 | As a site administrator, I should be able to view all customer orders, so that I can manage order processing and fullfillment | ![screenshot](documentation/user-stories/orders.png) |
-| As a site administrator, I should be able to see that payments have been processed with a time and date, so that I can ensure they are delivered ![screenshot](documentation/user-stories/paid-back.png) |
-|As a site administrator, I should be able to manage user accounts and passwords, so that I can remove/add or change accounts or passwords ![screenshot](documentation/user-stories/accounts.png) |
-|  As a site administrator, I should be able to see who has filled in a form, so that I can respond accordingly and edit or delete/add customer details | ![screenshot](documentation/user-stories/contact-form-back.png) |
+| As a site administrator, I should be able to see that payments have been processed with a time and date, so that I can ensure they are delivered | ![screenshot](documentation/user-stories/paid-back.png) |
+|As a site administrator, I should be able to manage user accounts and passwords, so that I can remove/add or change accounts or passwords | ![screenshot](documentation/user-stories/accounts.png) |
+| As a site administrator, I should be able to see who has filled in a form, so that I can respond accordingly and edit or delete/add customer details | ![screenshot](documentation/user-stories/contact-form-back.png) |
 | As a site administrator, I should be able to see who has filled in a form, so that I can respond to them accordingly | ![screenshot](documentation/user-stories/contact-form-back.png) |
 
 

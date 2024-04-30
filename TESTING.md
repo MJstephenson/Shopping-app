@@ -221,7 +221,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Click on the Edit button | User can edit their details | Pass | |
-| | Previous orders should show | past orders should show | Fail | |
+| | Previous orders should show | past orders should show | Fail | Past orders should show in the users history |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 | Shopping Bag | | | | |
 | | Bag products | all products selected show in bag | Pass | |
@@ -231,7 +231,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Checkout | | | | |
 | | Fill in form and stripe payment | proceeds to confirmation page | Pass | |
 | | Enter invalid data | tooltips are shown | Pass | |
-| | Save details tickbox | does not save data | Fail | |
+| | Save details tickbox | does not save data | Fail | Customer details should save but they dont|
 | Confirmation page | | | | |
 | | Invoice shows all details/data from purchase | Pass | |
 | | Toast for confirmation shows| works as expected | Pass | |
@@ -244,7 +244,7 @@ Defensive programming was manually tested with the below user acceptance testing
 || superuser attempts to incorrectly fill out form | all tooltips display as appropriate & page wont proceed | Pass | |
 | Special Offers | | | | |
 || superuser clicks tickbox to make a product clearence/deal/new.  | Text appears on image as expected and product appears when special offers type is selected in navbar. | Pass | |
-|| superuser clicks 2-3 tickboxes | 3 special offer text boxes appear on images | Fail | |
+|| superuser clicks 2-3 tickboxes | 3 special offer text boxes appear on images | Fail | All 3 offers overlap |
 
 
 ## User Story Testing

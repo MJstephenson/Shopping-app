@@ -136,7 +136,7 @@ I've used [Figma](https://figma.com) to design my site wireframes. As the produc
 ![screenshot](documentation/readme_images/features/edit-delete.png)
 ![screenshot](documentation/readme_images/features/edit-product.png)
 ![screenshot](documentation/readme_images/features/edit-product-1.png)
-!
+
 
 - **Toasts For Notifications**
 

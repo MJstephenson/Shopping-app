@@ -5,7 +5,7 @@ This is a shopping app for a selection of alcoholic beverages. It will have a fu
 https://ui.dev/amiresponsive?url=https://shopaholic-app-7001a5641b3f.herokuapp.com/
 
 
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/responsiveness/am-I-responsive-yes.png)
 
 
 ## UX

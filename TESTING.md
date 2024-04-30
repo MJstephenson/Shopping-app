@@ -116,11 +116,32 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | Products | Contact | Details | Bag | Checkout | Success | Notes |
+| Device | Home | Products | Contact | Thanks | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/home-desktop-res.png) | ![screenshot](documentation/responsiveness/products-desk-res.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/home-desktop-res.png) | ![screenshot](documentation/responsiveness/products-desk-res.png) | ![screenshot](documentation/responsiveness/contact-desk-res.png) | ![screenshot](documentation/responsiveness/details-desk-res.png) | ![screenshot](documentation/responsiveness/bag-desk-res.png) | ![screenshot](documentation/responsiveness/checkout-desk-res.png) | ![screenshot](documentation/responsiveness/sucess-desk-res.png) |Works as expected |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/home-mob.png) | ![screenshot](documentation/responsiveness/products-mobile.png) | ![screenshot](documentation/responsiveness/mob-contact.png) | ![screenshot](documentation/responsiveness/mob-thanks.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/home-tablet.png) | ![screenshot](documentation/responsiveness/tablet-products.png) | ![screenshot](documentation/responsiveness/tablet-contact.png) | ![screenshot](documentation/responsiveness/tablet-thanks.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/home-desktop-res.png) | ![screenshot](documentation/responsiveness/products-desk.png) | ![screenshot](documentation/responsiveness/desktop-contact.png) | ![screenshot](documentation/responsiveness/desktop-thanks.png) | Works as expected |
+
+
+
+| Device | Bag | Success | Details | Email Confirmation  | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile-bag.png) | ![screenshot](documentation/responsiveness/mobile-success.png) | ![screenshot](documentation/responsiveness/mobile-details.png) | ![screenshot](documentation/responsiveness/mobile-conf.png) | Small issue with header cutting off body in bag|
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-bag.png) | ![screenshot](documentation/responsiveness/tablet-success.png) | ![screenshot](documentation/responsiveness/tablet-details.png) | ![screenshot](documentation/responsiveness/tablet-conf.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/bag-desk.png) | ![screenshot](documentation/responsiveness/desktop-success.png) | ![screenshot](documentation/responsiveness/desktop-details.png) | ![screenshot](documentation/responsiveness/desktop-conf.png) | Works as expected |
+
+
+
+| Device | Checkout | Edit/add | | | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mob-checkout.png) | ![screenshot](documentation/responsiveness/mobile-manage.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet-checkout.png) | ![screenshot](documentation/responsiveness/tablet-manage.png) | | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/desktop-checkout.png) |  |  | Works as expected |
+
+
+
+
+
 
 
 
